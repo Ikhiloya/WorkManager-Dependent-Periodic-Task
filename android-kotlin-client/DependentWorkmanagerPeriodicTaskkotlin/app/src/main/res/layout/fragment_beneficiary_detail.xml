@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_4"
+    android:paddingStart="@dimen/padding_16"
+    android:paddingTop="@dimen/padding_16"
+    android:paddingEnd="@dimen/padding_16"
+    android:paddingBottom="@dimen/padding_16"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.fragment.beneficiarys.BeneficiaryDetailFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/margin_36"
+        android:layout_marginBottom="@dimen/margin_4"
+        android:background="@color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_32"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/first_name" />
+
+        <TextView
+            android:id="@+id/firstName"
+            style="@style/StaffTextStyle"
+            android:layout_weight="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:hint="@string/first_name_text" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_4"
+        android:background="@color/darker_gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_32"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/last_name" />
+
+        <TextView
+            android:id="@+id/lastName"
+            style="@style/StaffTextStyle"
+            android:layout_weight="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:hint="@string/last_name_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_4"
+        android:background="@color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_32"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/last_name" />
+
+        <TextView
+            android:id="@+id/relationship"
+            style="@style/StaffTextStyle"
+            android:layout_weight="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:hint="@string/relationship" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_4"
+        android:background="@color/darker_gray" />
+
+
+</LinearLayout>

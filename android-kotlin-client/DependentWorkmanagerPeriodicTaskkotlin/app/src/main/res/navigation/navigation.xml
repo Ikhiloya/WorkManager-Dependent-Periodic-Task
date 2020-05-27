@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/personFragment">
+
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.ikhiloyaimokhai.dependentworkmanagerperiodictask_kotlin.view.fragment.person.PersonFragment"
+        android:label="@string/person"
+        tools:layout="@layout/fragment_person">
+        <action
+            android:id="@+id/action_personFragment_to_personDetailFragment"
+            app:destination="@id/personDetailFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_addPersonFragment"
+            app:destination="@id/addPersonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personDetailFragment"
+        android:name="com.ikhiloyaimokhai.dependentworkmanagerperiodictask_kotlin.view.fragment.person.PersonDetailFragment"
+        android:label="@string/person"
+        tools:layout="@layout/fragment_person_detail">
+        <argument
+            android:name="personId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="firstName"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="personLocalId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_personDetailFragment_to_beneficiaryFragment"
+            app:destination="@id/beneficiaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPersonFragment"
+        android:name="com.ikhiloyaimokhai.dependentworkmanagerperiodictask_kotlin.view.fragment.person.AddPersonFragment"
+        android:label="@string/add_person"
+        tools:layout="@layout/fragment_add_person" />
+    <fragment
+        android:id="@+id/addBeneficiaryFragment"
+        android:name="com.ikhiloyaimokhai.dependentworkmanagerperiodictask_kotlin.view.fragment.beneficiary.AddBeneficiaryFragment"
+        android:label="@string/add_beneficiary"
+        tools:layout="@layout/fragment_add_beneficiary">
+        <argument
+            android:name="personLocalId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/beneficiaryFragment"
+        android:name="com.ikhiloyaimokhai.dependentworkmanagerperiodictask_kotlin.view.fragment.beneficiary.BeneficiaryFragment"
+        android:label="@string/beneficiary"
+        tools:layout="@layout/fragment_beneficiary">
+        <argument
+            android:name="personLocalId"
+            app:argType="integer" />
+        <argument
+            android:name="fullName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_beneficiaryFragment_to_addBeneficiaryFragment"
+            app:destination="@id/addBeneficiaryFragment" />
+        <action
+            android:id="@+id/action_beneficiaryFragment_to_beneficiaryDetailFragment"
+            app:destination="@id/beneficiaryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beneficiaryDetailFragment"
+        android:name="com.ikhiloyaimokhai.dependentworkmanagerperiodictask_kotlin.view.fragment.beneficiary.BeneficiaryDetailFragment"
+        android:label="@string/beneficiary"
+        tools:layout="@layout/fragment_beneficiary_detail">
+        <argument
+            android:name="firstName"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="relationship"
+            app:argType="string" />
+    </fragment>
+</navigation>

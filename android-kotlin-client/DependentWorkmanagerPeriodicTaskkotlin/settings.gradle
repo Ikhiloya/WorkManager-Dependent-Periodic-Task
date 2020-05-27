@@ -1,0 +1,2 @@
+rootProject.name='DependentWorkmanagerPeriodicTask-kotlin'
+include ':app'

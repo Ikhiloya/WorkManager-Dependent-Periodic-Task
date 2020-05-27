@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">DependentWorkmanagerPeriodicTask-kotlin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fullName">John Doe</string>
+    <string name="staff_id">8548585</string>
+    <string name="save">Save</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name_text">John</string>
+    <string name="last_name_text">Doe</string>
+    <string name="relationship">Sister</string>
+    <string name="relationship_text">Relationship</string>
+    <string name="person_id_text">ID</string>
+    <string name="people">Staff</string>
+    <string name="beneficiary">Beneficiary</string>
+    <string name="add_staff">Add Staff</string>
+    <string name="add_beneficiary">Add Beneficiary</string>
+    <string name="first_name_required">First Name is required</string>
+    <string name="last_name_required">Last Name is required</string>
+    <string name="person_detail">Person Detail</string>
+    <string name="person">Person</string>
+    <string name="add_person">Add Person</string>
+    <string-array name="relationship_arrays">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Child</item>
+    </string-array>
+</resources>
